@@ -1,4 +1,4 @@
 # booklist
-An easy booklist implements CRUD function
+An easy booklist implements CRUD function.
 
 Using Mybatis,SpringBoot.
