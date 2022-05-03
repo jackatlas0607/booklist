@@ -4,6 +4,7 @@ import com.bookList.pojo.Book;
 import com.bookList.pojo.query.BookQuery;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,10 +20,12 @@ public interface BookDao {
 
 
     //修改書籍
+    @Transactional
     int updateBook(Book book);
 
 
     //新增書籍
+    @Transactional
     int addBook(Book book);
 
     //根據id刪除書籍

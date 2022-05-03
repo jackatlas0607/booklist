@@ -9,12 +9,12 @@
 <div class="ui container">
     <table class="ui celled attached table" style="margin-top: 40px">
 
-        <div class="ui attached segment">
-            <form th:action="@{/}" method="post" style="display: inline-block !important;">
+        <div class="ui attached segment" style="margin-top: 50px">
+            <form th:action="@{/}" method="post" style="display: inline-block;">
                 <input type="text" name="name" placeholder="輸入書名查詢">
                 <input type="submit" value="搜尋">
             </form>
-            <a th:href="@{/add}" class="ui button mini teal" style="margin-left: 800px !important;">新增</a>
+            <a th:href="@{/add}" class="ui button mini brown" style="margin-left: 800px">新增</a>
         </div>
 
         <thead>
