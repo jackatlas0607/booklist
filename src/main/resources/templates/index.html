@@ -33,7 +33,12 @@
             <td th:text="${book.author}"></td>
             <td th:text="${book.description}"></td>
             <td th:text="${book.name}"></td>
-            <td th:text="${book.status}"></td>
+            <td th:switch="${book.status}">
+                <span th:case="0">想讀</span>
+                <span th:case="1">在讀</span>
+                <span th:case="2">已讀</span>
+                <span th:case="*">狀態</span>  <!-- *代表默認，前面都沒匹配到就走這個-->
+            </td>
             <td>
                 <a th:href="@{/update/{id}(id=${book.id})}" class="ui purple basic button">編輯</a>
                 <a th:href="@{/delete/{id}(id=${book.id})}" class="ui red basic button">刪除</a>

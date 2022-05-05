@@ -20,3 +20,4 @@ logging:
   level:
     root: INFO
     com.bookList: DEBUG
+    
