@@ -13,7 +13,9 @@ Ambiguity in the SQL query
 
 EDIT
 
-修改id=1,author=詹姆斯‧克利爾
+修改id=1,author=詹姆斯‧克利爾 
+
+status由已讀改為在讀
 
 <img src="images/third.jpg">
 <img src="images/fourth.jpg">
